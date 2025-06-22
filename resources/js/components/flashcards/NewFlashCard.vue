@@ -27,7 +27,6 @@ const handleSave = () => {
     <Card class="w-full mx-auto p-6 rounded-xl">
         <CardContent>
             <div class="space-y-6">
-                <!-- Card Type Selection -->
                 <div>
                     <Label for="cardType" class="text-base font-medium block mb-2">Tipo</Label>
                     <Select v-model="cardType">
@@ -67,7 +66,8 @@ const handleSave = () => {
 
         <CardFooter class="flex justify-end mt-6">
             <!-- Adicionar botão de gerar resposta com IA se o cardType for FlashCards -->
-            <Button variant="outline" v-if="cardType === 'FlashCards'" class="mr-2" @click="() => { /* Logic to generate answer using AI */ }">
+            <Button variant="outline" v-if="cardType === 'FlashCards'" class="mr-2"
+                @click="() => { /* Logic to generate answer using AI */ }">
                 Gerar Resposta com IA
             </Button>
 

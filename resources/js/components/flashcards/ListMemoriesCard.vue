@@ -4,7 +4,6 @@ import { Card, CardHeader, CardTitle, CardContent, CardFooter } from '@/componen
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 
-// add memory
 </script>
 
 
@@ -97,41 +96,3 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
         </CardFooter> -->
     </Card>
 </template>
-
-
-
-// export default {
-
-// props: {
-// memory: {
-// type: Object,
-// required: true,
-// default: () => ({
-// id: 1,
-// type: 'text-correction',
-// date: '25 de Maio de 2025',
-// question: 'Explique sobre o que é approach?',
-// answer: 'Approach refers to a method or way of dealing with a problem or situation.',
-// createdText: 'Tanta petere igitur, ne sineres memini fieri etiam aliquam inclinationem ad consequendum minima.
-Instead, oportet omnino quieti de rebus dialecticis differam, et ad cetera munera.',
-// correctedText: 'Tanta petere igitur, ne sineres memini fieri etiam aliquam inclinationem ad consequendum minima. Em
-vez disso, oportet omnino quieti de rebus dialecticis differam, et ad cetera munera.',
-// corrections: [
-// { id: 1, detail: 'Substituir "Instead" por "Em vez disso"' }
-// ]
-// })
-// }
-// },
-// setup() {
-// const isExpanded = ref(false);
-
-// const toggleAccordion = () => {
-// isExpanded.value = !isExpanded.value;
-// };
-
-// return {
-// isExpanded,
-// toggleAccordion
-// };
-// }
-// };
