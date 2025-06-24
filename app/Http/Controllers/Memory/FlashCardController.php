@@ -1,0 +1,29 @@
+<?php
+
+namespace App\Http\Controllers\Memory;
+
+use App\Http\Controllers\Controller;
+use App\Models\Card;
+use Illuminate\Http\Request;
+
+class FlashCardController extends Controller
+{
+    public function store(Request $request)
+    {
+        $request->validate([
+            'cardType' => ['required', 'in:flashcard,text'],
+            'question' => ['nullable', 'string'],
+            'answer'   => ['required', 'string']
+        ]);
+
+        Card::query()->create([
+            'type' => $request->cardType,
+            'question'  => $request->question,
+            'answer'    => $request->answer,
+            'user_id'   => $request->user()->id,
+
+        ]);
+
+        return to_route('dashboard');
+    }
+}
