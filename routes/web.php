@@ -14,8 +14,8 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
         return Inertia::render('Dashboard');
     })->name('dashboard');
 
-    Route::prefix('memory')->as('memory.')->group(function () {
-        Route::resource('flashcards', FlashCardController::class)->only(['store']);
+    Route::as('memory.')->group(function () {
+        Route::resource('flashcards', FlashCardController::class)->only(['store', 'index']);
     });
 });
 

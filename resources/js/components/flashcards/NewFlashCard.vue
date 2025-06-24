@@ -30,7 +30,7 @@ watch(() => form.cardType, (val) => {
 
 /* 4. Envio --------------------------------------------------------------- */
 function handleSubmit() {
-    form.post(route('memory.flashcards.store'), {
+    form.post(route('flashcards.store'), {
         onSuccess: () => form.reset('question', 'answer'),
     })
 }
@@ -39,7 +39,7 @@ function handleSubmit() {
 async function generateAIAnswer() {
     if (!form.question.trim()) return
     // supondo que exista essa rota
-    const { data } = await router.post(route('memory.ai'), { question: form.question })
+    const { data } = await router.post(route('flashcards.ai'), { question: form.question })
     form.answer = data.answer
 }
 </script>

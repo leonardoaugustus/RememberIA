@@ -26,4 +26,16 @@ class FlashCardController extends Controller
 
         return to_route('dashboard');
     }
+
+    public function index(Request $request)
+    {
+        $cards = Card::query()
+            ->where('user_id', $request->user()->id)
+            ->latest()
+            ->get();
+
+        return inertia('flashcard/Card', [
+            'cards' => $cards,
+        ]);
+    }
 }
