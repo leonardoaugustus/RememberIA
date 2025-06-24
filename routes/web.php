@@ -14,9 +14,9 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
         return Inertia::render('Dashboard');
     })->name('dashboard');
 
-    Route::as('memory.')->group(function () {
+
         Route::resource('flashcards', FlashCardController::class)->only(['store', 'index']);
-    });
+
 });
 
 require __DIR__ . '/settings.php';

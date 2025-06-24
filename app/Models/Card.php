@@ -9,5 +9,8 @@ class Card extends Model
 {
     /** @use HasFactory<\Database\Factories\CardFactory> */
     use HasFactory;
-    
+
+    protected $casts = [
+        'tags' => 'array',
+    ];
 }

@@ -24,7 +24,7 @@ class FlashCardController extends Controller
 
         ]);
 
-        return to_route('dashboard');
+        return back()->with('success', 'Flashcard created successfully!');
     }
 
     public function index(Request $request)

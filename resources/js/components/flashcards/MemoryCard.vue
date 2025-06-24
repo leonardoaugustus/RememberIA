@@ -18,7 +18,7 @@ import {
             </CardTitle>
 
             <div class="space-y-4 mt-4">
-                <div v-if="card.type === 'FlashCards'">
+                <div v-if="card.type === 'flashcard'">
                     <h4 class="font-medium">Pergunta</h4>
                     <p class="text-sm text-muted-foreground">{{ card.question }}</p>
 
