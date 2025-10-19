@@ -6,11 +6,13 @@ namespace App\Http\Controllers\Memory;
 
 use App\Http\Controllers\Controller;
 use App\Models\Card;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Inertia\Response;
 
 class FlashCardController extends Controller
 {
-    public function store(Request $request)
+    public function store(Request $request): RedirectResponse
     {
         $request->validate([
             'cardType' => ['required', 'in:flashcard,text'],
@@ -29,7 +31,7 @@ class FlashCardController extends Controller
         return back()->with('success', 'Flashcard created successfully!');
     }
 
-    public function index(Request $request)
+    public function index(Request $request): Response
     {
         $cards = Card::query()
             ->where('user_id', $request->user()->id)
