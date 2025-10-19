@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace App\Http\Controllers\Memory;
 
 use App\Http\Controllers\Controller;
@@ -13,14 +15,14 @@ class FlashCardController extends Controller
         $request->validate([
             'cardType' => ['required', 'in:flashcard,text'],
             'question' => ['nullable', 'string'],
-            'answer'   => ['required', 'string']
+            'answer'   => ['required', 'string'],
         ]);
 
         Card::query()->create([
-            'type' => $request->cardType,
-            'question'  => $request->question,
-            'answer'    => $request->answer,
-            'user_id'   => $request->user()->id,
+            'type'     => $request->cardType,
+            'question' => $request->question,
+            'answer'   => $request->answer,
+            'user_id'  => $request->user()->id,
 
         ]);
 

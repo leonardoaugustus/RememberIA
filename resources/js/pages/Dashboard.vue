@@ -4,7 +4,7 @@ import { type BreadcrumbItem } from '@/types';
 import { Head } from '@inertiajs/vue3';
 import PlaceholderPattern from '../components/PlaceholderPattern.vue';
 import NewFlashCard from '@/components/flashcards/NewFlashCard.vue';
-import ListMemoriesCard from '@/components/flashcards/ListMemoriesCard.vue'; 
+// import ListMemoriesCard from '@/components/flashcards/ListMemoriesCard.vue'; 
 
 const breadcrumbs: BreadcrumbItem[] = [
     {
