@@ -26,7 +26,7 @@ class TestApi extends Command
     /**
      * Execute the console command.
      */
-    public function handle()
+    public function handle(): void
     {
         // faça um loop infinito com sleep de 1 segundo
         while (true) {

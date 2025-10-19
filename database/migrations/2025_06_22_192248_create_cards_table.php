@@ -13,7 +13,7 @@ return new class () extends Migration
      */
     public function up(): void
     {
-        Schema::create('cards', function (Blueprint $table) {
+        Schema::create('cards', function (Blueprint $table): void {
             $table->id();
             $table->enum('type', ['flashcard', 'text', 'open'])->default('text');
             $table->string('title')->nullable();

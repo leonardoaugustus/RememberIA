@@ -24,7 +24,7 @@ class CardFactory extends Factory
             'question'  => $this->faker->paragraph(),
             'answer'    => $this->faker->paragraph(),
             'content'   => $this->faker->paragraph(),
-            'tags'      => $this->faker->words(rand(1, 4)),
+            'tags'      => $this->faker->words(random_int(1, 4)),
             'is_public' => $this->faker->boolean(),
             'user_id'   => \App\Models\User::factory(),
         ];
