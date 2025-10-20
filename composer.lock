@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1fffef0f4bb9a8b40c3a785f0c23fed7",
+    "content-hash": "a4f3924bdf34009ef7ba678ee6f7830d",
     "packages": [
         {
             "name": "brick/math",
@@ -1719,16 +1719,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "3.30.0",
+            "version": "3.30.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "2203e3151755d874bb2943649dae1eb8533ac93e"
+                "reference": "c139fd65c1f796b926f4aec0df37f6caa959a8da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/2203e3151755d874bb2943649dae1eb8533ac93e",
-                "reference": "2203e3151755d874bb2943649dae1eb8533ac93e",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/c139fd65c1f796b926f4aec0df37f6caa959a8da",
+                "reference": "c139fd65c1f796b926f4aec0df37f6caa959a8da",
                 "shasum": ""
             },
             "require": {
@@ -1796,9 +1796,9 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
-                "source": "https://github.com/thephpleague/flysystem/tree/3.30.0"
+                "source": "https://github.com/thephpleague/flysystem/tree/3.30.1"
             },
-            "time": "2025-06-25T13:29:59+00:00"
+            "time": "2025-10-20T15:35:26+00:00"
         },
         {
             "name": "league/flysystem-local",
@@ -2723,6 +2723,90 @@
                 "source": "https://github.com/opcodesio/mail-parser/tree/v0.1.6"
             },
             "time": "2023-11-19T08:47:43+00:00"
+        },
+        {
+            "name": "owen-it/laravel-auditing",
+            "version": "v14.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/owen-it/laravel-auditing.git",
+                "reference": "f92602d1b3f53df29ddd577290e9d735ea707c53"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/owen-it/laravel-auditing/zipball/f92602d1b3f53df29ddd577290e9d735ea707c53",
+                "reference": "f92602d1b3f53df29ddd577290e9d735ea707c53",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/console": "^11.0|^12.0",
+                "illuminate/database": "^11.0|^12.0",
+                "illuminate/filesystem": "^11.0|^12.0",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.5.1",
+                "orchestra/testbench": "^9.0|^10.0",
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "OwenIt\\Auditing\\AuditingServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "v14-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "OwenIt\\Auditing\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Antério Vieira",
+                    "email": "anteriovieira@gmail.com"
+                },
+                {
+                    "name": "Raphael França",
+                    "email": "raphaelfrancabsb@gmail.com"
+                },
+                {
+                    "name": "Morten D. Hansen",
+                    "email": "morten@visia.dk"
+                }
+            ],
+            "description": "Audit changes of your Eloquent models in Laravel",
+            "homepage": "https://laravel-auditing.com",
+            "keywords": [
+                "Accountability",
+                "Audit",
+                "auditing",
+                "changes",
+                "eloquent",
+                "history",
+                "laravel",
+                "log",
+                "logging",
+                "lumen",
+                "observer",
+                "record",
+                "revision",
+                "tracking"
+            ],
+            "support": {
+                "issues": "https://github.com/owen-it/laravel-auditing/issues",
+                "source": "https://github.com/owen-it/laravel-auditing"
+            },
+            "time": "2025-02-26T16:40:54+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -6249,28 +6333,28 @@
         },
         {
             "name": "webmozart/assert",
-            "version": "1.11.0",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozarts/assert.git",
-                "reference": "11cb2199493b2f8a3b53e7f19068fc6aac760991"
+                "reference": "541057574806f942c94662b817a50f63f7345360"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozarts/assert/zipball/11cb2199493b2f8a3b53e7f19068fc6aac760991",
-                "reference": "11cb2199493b2f8a3b53e7f19068fc6aac760991",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/541057574806f942c94662b817a50f63f7345360",
+                "reference": "541057574806f942c94662b817a50f63f7345360",
                 "shasum": ""
             },
             "require": {
                 "ext-ctype": "*",
+                "ext-date": "*",
+                "ext-filter": "*",
                 "php": "^7.2 || ^8.0"
             },
-            "conflict": {
-                "phpstan/phpstan": "<0.12.20",
-                "vimeo/psalm": "<4.6.1 || 4.6.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^8.5.13"
+            "suggest": {
+                "ext-intl": "",
+                "ext-simplexml": "",
+                "ext-spl": ""
             },
             "type": "library",
             "extra": {
@@ -6301,9 +6385,9 @@
             ],
             "support": {
                 "issues": "https://github.com/webmozarts/assert/issues",
-                "source": "https://github.com/webmozarts/assert/tree/1.11.0"
+                "source": "https://github.com/webmozarts/assert/tree/1.12.0"
             },
-            "time": "2022-06-03T18:03:27+00:00"
+            "time": "2025-10-20T12:43:39+00:00"
         }
     ],
     "packages-dev": [
@@ -6794,6 +6878,147 @@
                 "source": "https://github.com/Jean85/pretty-package-versions/tree/2.1.1"
             },
             "time": "2025-03-19T14:43:43+00:00"
+        },
+        {
+            "name": "laradumps/laradumps",
+            "version": "v4.5.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laradumps/laradumps.git",
+                "reference": "19aaece19e1a0efb94ef0a4a9d7224e7b7287c7a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laradumps/laradumps/zipball/19aaece19e1a0efb94ef0a4a9d7224e7b7287c7a",
+                "reference": "19aaece19e1a0efb94ef0a4a9d7224e7b7287c7a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/mail": "^10.0|^11.0|^12.0",
+                "illuminate/support": "^10.0|^11.0|^12.0",
+                "laradumps/laradumps-core": "^3.2.2",
+                "nunomaduro/termwind": "^1.15.1|^2.0.1",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "larastan/larastan": "^2.0|^3.0",
+                "laravel/framework": "^10.0|^11.0|^12.0",
+                "laravel/pint": "^1.17.2",
+                "livewire/livewire": "^3.5.6",
+                "mockery/mockery": "^1.6.12",
+                "orchestra/testbench-core": "^8.0|^9.4|^10.0",
+                "pestphp/pest": "^4.0.0|^3.7.0|^2.35.1",
+                "symfony/var-dumper": "^6.4.0|^7.1.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaraDumps\\LaraDumps\\LaraDumpsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "LaraDumps\\LaraDumps\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luan Freitas",
+                    "email": "luanfreitas10@protonmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "LaraDumps is a friendly app designed to boost your Laravel PHP coding and debugging experience.",
+            "homepage": "https://github.com/laradumps/laradumps",
+            "support": {
+                "issues": "https://github.com/laradumps/laradumps/issues",
+                "source": "https://github.com/laradumps/laradumps/tree/v4.5.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/luanfreitasdev",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-10-20T11:12:08+00:00"
+        },
+        {
+            "name": "laradumps/laradumps-core",
+            "version": "v3.2.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laradumps/laradumps-core.git",
+                "reference": "37b450134e1e29f6381c5957c23c0d53b322b9a6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laradumps/laradumps-core/zipball/37b450134e1e29f6381c5957c23c0d53b322b9a6",
+                "reference": "37b450134e1e29f6381c5957c23c0d53b322b9a6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "nunomaduro/termwind": "^1.15|^2.0",
+                "php": "^8.1",
+                "ramsey/uuid": "^4.7.5",
+                "spatie/backtrace": "^1.5",
+                "symfony/console": "^5.4|^6.4|^7.0",
+                "symfony/finder": "^5.4|^6.4|^7.0",
+                "symfony/process": "^5.4|^6.4|^7.0",
+                "symfony/var-dumper": "^5.4|^6.4|^7.0",
+                "symfony/yaml": "^5.4|^6.4|^7.0"
+            },
+            "require-dev": {
+                "illuminate/support": "^10.46",
+                "laravel/pint": "^1.13.7",
+                "pestphp/pest": "^2.0|^3.0",
+                "phpstan/phpstan": "^1.10.50"
+            },
+            "bin": [
+                "bin/laradumps"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "LaraDumps\\LaraDumpsCore\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luan Freitas",
+                    "email": "luanfreitas10@protonmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "LaraDumps is a friendly app designed to boost your Laravel / PHP coding and debugging experience.",
+            "homepage": "https://github.com/laradumps/laradumps-core",
+            "support": {
+                "issues": "https://github.com/laradumps/laradumps-core/issues",
+                "source": "https://github.com/laradumps/laradumps-core/tree/v3.2.7"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/luanfreitasdev",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-10-20T21:02:07+00:00"
         },
         {
             "name": "larastan/larastan",
@@ -9614,6 +9839,70 @@
                 }
             ],
             "time": "2024-10-09T05:16:32+00:00"
+        },
+        {
+            "name": "spatie/backtrace",
+            "version": "1.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/backtrace.git",
+                "reference": "8c0f16a59ae35ec8c62d85c3c17585158f430110"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/backtrace/zipball/8c0f16a59ae35ec8c62d85c3c17585158f430110",
+                "reference": "8c0f16a59ae35ec8c62d85c3c17585158f430110",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3 || ^8.0"
+            },
+            "require-dev": {
+                "ext-json": "*",
+                "laravel/serializable-closure": "^1.3 || ^2.0",
+                "phpunit/phpunit": "^9.3 || ^11.4.3",
+                "spatie/phpunit-snapshot-assertions": "^4.2 || ^5.1.6",
+                "symfony/var-dumper": "^5.1 || ^6.0 || ^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Backtrace\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van de Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A better backtrace",
+            "homepage": "https://github.com/spatie/backtrace",
+            "keywords": [
+                "Backtrace",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/backtrace/issues",
+                "source": "https://github.com/spatie/backtrace/tree/1.8.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/spatie",
+                    "type": "github"
+                },
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "other"
+                }
+            ],
+            "time": "2025-08-26T08:22:30+00:00"
         },
         {
             "name": "staabm/side-effects-detector",
