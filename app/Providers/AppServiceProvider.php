@@ -1,11 +1,12 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace App\Providers;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\ServiceProvider;
+use Opcodes\LogViewer\Facades\LogViewer;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -33,5 +34,12 @@ class AppServiceProvider extends ServiceProvider
         // --
         // Make sure that all properties being called exists in the model
         Model::shouldBeStrict();
+    }
+
+    private function setLogViewer(): void
+    {
+        LogViewer::auth(function ($request) {
+            return $request->user() && $request->user()->is_admin;
+        });
     }
 }
