@@ -12,6 +12,12 @@ Route::group(['middleware' => ['auth', 'verified']], function (): void {
     Route::get('dashboard', fn() => Inertia::render('Dashboard'))->name('dashboard');
 
     Route::resource('flashcards', FlashCardController::class)->only(['store', 'index']);
+
+    // Group Billing
+    // Route::group(['prefix' => 'billing', 'as' => 'billing.'], function (): void {
+    //     Route::resource('subscriptions', SubscriptionController::class);
+    // });
+
 });
 
 require __DIR__ . '/settings.php';
