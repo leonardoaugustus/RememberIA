@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace App\Providers;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
 use Opcodes\LogViewer\Facades\LogViewer;
 
@@ -24,9 +26,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Model::preventLazyLoading(! $this->app->isProduction());
+        URL::forceScheme('https');
 
-        // remove validation Fillable Laravel 12
+        // Prevent Lazy Loading in non-production environments
+        Model::preventLazyLoading(! $this->app->isProduction());
 
         // Remove the need of the property fillable on each model
         Model::unguard();
@@ -34,6 +37,12 @@ class AppServiceProvider extends ServiceProvider
         // --
         // Make sure that all properties being called exists in the model
         Model::shouldBeStrict();
+
+        // prohibit Destruct commands
+        DB::prohibitDestructiveCommands($this->app->isProduction());
+
+        //
+        $this->setLogViewer();
     }
 
     private function setLogViewer(): void

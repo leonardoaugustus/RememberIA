@@ -20,7 +20,7 @@ const sidebarNavItems: NavItem[] = [
     },
      {
         title: 'Assinatura',
-        href: '/settings/appearance',
+        href: '/onboarding/subscriptions',
     },
 ];
 

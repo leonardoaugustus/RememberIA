@@ -3,6 +3,7 @@
 declare(strict_types = 1);
 
 use App\Http\Controllers\Memory\FlashCardController;
+use App\Http\Controllers\Onboarding\BillingController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -13,10 +14,10 @@ Route::group(['middleware' => ['auth', 'verified']], function (): void {
 
     Route::resource('flashcards', FlashCardController::class)->only(['store', 'index']);
 
-    // Group Billing
-    // Route::group(['prefix' => 'billing', 'as' => 'billing.'], function (): void {
-    //     Route::resource('subscriptions', SubscriptionController::class);
-    // });
+    // Group Onboarding
+    Route::group(['prefix' => 'onboarding', 'as' => 'onboarding.'], function (): void {
+        Route::resource('subscriptions', BillingController::class);
+    });
 
 });
 
